@@ -1,0 +1,93 @@
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/product_card.css");
+
+:root {
+    --background-color-main: rgb(135, 110, 135);
+    --background-color-light: rgb(190, 170, 185);
+    --background-color-additional: rgb(160, 130, 130);
+    --main-color-active: var(--bs-yellow);
+    --filter-color-yellow: brightness(300%) hue-rotate(30deg) contrast(100%);
+}
+
+main button {
+    text-transform: uppercase;
+}
+
+.pagination a {
+    color: black;
+    font-weight: 600;
+}
+
+.pagination .choosed {
+    background-color: var(--background-color-light);
+    color: white;
+}
+
+.star-image {
+    width: 15px;
+    height: 15px;
+    filter: var(--filter-color-yellow);
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.shop-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #AAAAAAAA;
+    animation-duration: 0.5s;
+    visibility: hidden;
+}
+.popup-bg.active {
+    animation-name: Appearance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.popup-bg.closed {
+    animation-name: Closure;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Appearance {
+    0% {opacity: 0; visibility: visible;}
+    100% {opacity: 1; visibility: visible;}
+}
+@keyframes Closure {
+    0% {opacity: 1; visibility: visible;}
+    100% {opacity: 0; visibility: hidden;}
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 2px solid #333333;
+    padding: 20px;
+    background-color: white;
+    visibility: hidden;
+}
+
+.popup.active {
+    visibility: visible;
+}
+
+.popup .card {
+    max-height: 300px;
+}

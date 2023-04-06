@@ -1,0 +1,25 @@
+.social-networks {
+    gap: 5%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+.social-networks a {
+    filter: invert();
+    border-radius: 40%;
+    padding: 4%;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    width: fit-content;
+}
+
+.social-networks img {
+    width: 2em;
+}
+
+.footer-links div {
+    width: auto;
+}

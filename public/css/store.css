@@ -1,0 +1,11 @@
+@import url("common.css");
+@import url("components/sort_bar.css");
+
+.title h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.title .space {
+    width: 10px;
+}

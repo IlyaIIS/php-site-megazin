@@ -1,0 +1,30 @@
+@import url("common.css");
+@import url("components/purchase_card.css");
+
+.main-region {
+    flex-wrap: wrap-reverse;
+}
+
+.purchase-card {
+    min-width: 350px;
+}
+
+.info-region {
+    display: inline-block;
+    max-width: 300px;
+    min-width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.info-region p {
+    font-weight: 600;
+}
+
+.info-region button {
+    margin-top: auto;
+}

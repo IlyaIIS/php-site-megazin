@@ -1,0 +1,24 @@
+@import url("../common.css");
+
+.page-borders {
+    background-color: var(--background-color-main);
+}
+
+.header__title a {
+    font-size: 3em;
+}
+
+header button {
+    border-radius: 60%;
+    border: 0;
+    padding: 1%;
+    background-color: var(--main-color-active);
+    border: solid 5px;
+    border-color: var(--background-color-additional);
+}
+
+.header__title img {
+    filter: brightness(0%) saturate(0%) opacity(100%);
+    width: 30pt;
+    height: 30pt;
+}

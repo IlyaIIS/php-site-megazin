@@ -1,0 +1,47 @@
+@import url("common.css");
+@import url("components/comment.css");
+
+.elevation p {
+    padding-bottom: 0;
+}
+
+.elevation .space {
+    width: 10px;
+}
+
+.elevation a {
+    margin-left: auto;
+    color: dimgrey;
+}
+
+.image-region {
+    width: 50%;
+}
+
+.image-region img {
+    width: 100%;
+}
+
+.description-region {
+    width: 50%;
+}
+
+.description-region button {
+    margin-bottom: 30px;
+}
+
+.description-region .price {
+    font-size: 60px;
+}
+
+.properties dl {
+    height: 25%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.dropdown img {
+    width: 30px;
+    height: 30px;
+    filter: contrast(0%);
+}
