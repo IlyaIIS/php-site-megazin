@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -54,9 +55,11 @@ class DataController extends Controller
         return $imageId;
     }
 
-    private function sendEmail(string $targetEmail, string $message) {
-        $message = wordwrap($message, 70, "\r\n");
-        mail($targetEmail, 'Notification', $message);
+    private function sendEmail(string $targetEmail, string $text) {
+        Mail::send('mail', ['text' => $text], function($message) use ($targetEmail) {
+            $message->to($targetEmail)->subject('Notification');
+            $message->from('megazinmailer@gmail.com');
+        });
     }
 
     public function modifyUser(Request $request)

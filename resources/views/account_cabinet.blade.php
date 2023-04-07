@@ -14,7 +14,7 @@
     <h1>Аккаунт</h1>
     <ul class="data list-unstyled">
         <li class="data-item">
-            <img class="avatar" src={{$avatarPath}} />
+            <img class="avatar" src="{{$avatarPath}}" alt="аватар"/>
             <button class="btn btn-warning open-popup-button open-popup-button_change-avatar">Изменить</button>
         </li>
         <li class="data-item">
@@ -26,7 +26,7 @@
         </li>
         <li class="data-item">
             <dl>
-                <dt>псевданим</dt>
+                <dt>псевдоним</dt>
                 <dd>{{$user->nickname}}</dd>
             </dl>
             <button class="btn btn-warning open-popup-button open-popup-button_change-nickname">Изменить</button>
@@ -53,15 +53,15 @@
         </li>
         <li class="data-item">
             <dl>
-                <dt>адресс</dt>
+                <dt>адрес</dt>
                 <dd>г. {{$user->city}} ул. {{$user->street}} д. {{$user->house}} {{$user->apartment ? "кв." . $user->apartment : ""}}</dd>
             </dl>
             <button class="btn btn-warning open-popup-button open-popup-button_change-address">Изменить</button>
         </li>
         <li class="data-item">
             <dl>
-                <dt>права</dt>
-                <dd>Покупатель {{($user->is_seller) ? "Продавец" : ""}} {{($user->is_seller) ? "Администратор" : ""}}</dd>
+                <dt>роли</dt>
+                <dd>Покупатель {{($user->is_seller) ? "Продавец" : ""}} {{($user->is_admin) ? "Администратор" : ""}}</dd>
             </dl>
         </li>
         <li><hr/></li>

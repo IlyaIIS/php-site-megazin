@@ -79,7 +79,7 @@
         <button type="button" class="btn btn-warning open-popup-button open-popup-button_comment">ОСТАВИТЬ ОТЗЫВ
         </button>
         <div class="d-flex flex-column gap-4">
-            @for($i = 0; $i < count($reviews); $i++)
+            @for($i = 0; $i < count($reviewsUsers); $i++)
                 @include('components.comment', ['index' => $i])
             @endfor
         </div>

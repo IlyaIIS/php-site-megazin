@@ -1,6 +1,6 @@
 <article class="comment">
     <div class="d-flex gap-3">
-        <img class="avatar" src="{{url($reviewsUsersImages[$i]->path . $reviewsUsersImages[$i]->name)}}"/>
+        <img class="avatar" src="{{url($reviewsUsersImagesPaths[$i])}}" alt="аватар пользователя"/>
         <div>
             <nav>{{$reviewsUsers[$i]->first_name . " " . $reviewsUsers[$i]->last_name}}</nav>
             <nav>{{(new DateTime($reviews[$i]->created_at))->format('Y-m-d')}}</nav>
@@ -13,7 +13,7 @@
         </div>
         <div class="dropdown">
             <button class="btn" type="button" data-bs-toggle="dropdown">
-                <img src="{{url('images\menu.svg')}}"/>
+                <img src="{{url('images\menu.svg')}}" alt="меню"/>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>

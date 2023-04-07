@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 use Symfony\Component\HttpFoundation\Response;
@@ -104,8 +105,17 @@ class PageController extends Controller
         foreach ($reviewsUsers as $reviewUser) {
             $reviewsUsersImagesIds[] = $reviewUser->image_id;
         }
-        $reviewsUsersImages = DB::table('images')->whereIn('id', $reviewsUsersImagesIds)->get();
 
+        $reviewsUsersImagesPaths = [];
+        for ($i = 0; $i < count($reviewsUsers); $i++) {
+            $image = DB::table('images')->find($reviewsUsersImagesIds[$i]);
+            if ($image){
+                $reviewsUsersImagesPaths[] = $image->path . $image->name;
+            } else {
+                $reviewsUsersImagesPaths[] = 'images/user-avatar-placeholder.png';
+            }
+
+        }
 
         return Response(view('product', [
             'product' => $product,
@@ -113,7 +123,7 @@ class PageController extends Controller
             'reviews' => $reviews,
             'reviewsImagesPaths' => $reviewsImagesPaths,
             'reviewsUsers' => $reviewsUsers,
-            'reviewsUsersImages' => $reviewsUsersImages,
+            'reviewsUsersImagesPaths' => $reviewsUsersImagesPaths,
             'storeName' => $storeName,
             'storeId' => $product->store_id,
             'orderCount' => $orderCount,
@@ -409,8 +419,10 @@ class PageController extends Controller
         $statesIds = [];
         foreach ($orders as $order)
             $statesIds[] = $order->state_id;
-
-        $states = DB::table('order_states')->whereIn('id', $statesIds)->get();
+        $states = [];
+        foreach ($statesIds as $stateId) {
+            $states[] = DB::table('order_states')->find($stateId);
+        }
 
         return Response(view('orders', [
             'products' => $products,
