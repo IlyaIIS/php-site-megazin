@@ -1,66 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## О проекте
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Семестровая работа по PHP, выполненная с использованием фреймвока Laravel. Проект представляет из себя интернет-магазин без определённой тематики
 
-## About Laravel
+## Схема базы данных
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![2023-04-06_16-00-10](https://user-images.githubusercontent.com/70832710/230877403-370f149e-fe07-4381-a45a-86b42e1dd926.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Разделы сайта
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Домашняя страница
 
-## Learning Laravel
+![2023-04-06_15-25-14](https://user-images.githubusercontent.com/70832710/230877917-7e162948-544d-4e7f-a051-a8c90b87b092.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Здесь представлены случайные товары и банер с актуальным предложением.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Каталог
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![2023-04-06_15-25-52](https://user-images.githubusercontent.com/70832710/230878188-f26a9a7f-c60e-43fc-ba32-8f884534af23.png)
 
-## Laravel Sponsors
+Здесь представлен весь перечень товаров в магазине с заделом на возможность поиска и сортировки товаров. 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Страница товара
 
-### Premium Partners
+![2023-04-06_15-13-02](https://user-images.githubusercontent.com/70832710/230878405-a0a3ca60-f45d-42f8-920f-51430bf87c49.png)
+![2023-04-06_15-14-55](https://user-images.githubusercontent.com/70832710/230878826-5dc53442-5988-432e-9d94-3e960d785c02.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Предоставляет описание товара, демонстрирует список отзывов к нему и даёт возможность добавить его в корзину. 
 
-## Contributing
+### Страница магазина
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![2023-04-06_15-31-52](https://user-images.githubusercontent.com/70832710/230878604-d2c93cf2-5e27-44bb-8d0e-a169bbd277a9.png)
 
-## Code of Conduct
+Предоставляет информацию о магазине и даёт перечень товаров этого магазина с заделом на поиск и сортировку.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Личный кабинет
 
-## Security Vulnerabilities
+![2023-04-06_15-21-11](https://user-images.githubusercontent.com/70832710/230878943-34202e06-39ba-4331-a9a9-f01370a54969.png)
+![2023-04-06_15-21-22](https://user-images.githubusercontent.com/70832710/230879040-f665110e-89aa-4994-b948-facd0a0a3509.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Предоставляет владельцу информацию о его аккаунте и даёт возможность изменить её.
 
-## License
+### Кабинет продавца
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![2023-04-06_15-28-02](https://user-images.githubusercontent.com/70832710/230879157-afbb8e4b-3a2c-4c96-a56b-7c15bbb2d9a4.png)
+
+Даёт информацию о магазине продавца с возможностью её изменения. А также предоставляет возможность добавления товара в это магазин.
+
+### Кабинет администратора
+
+![2023-04-06_15-26-57](https://user-images.githubusercontent.com/70832710/230879360-eb48b41c-1923-45ad-929b-2bc3c5005ff9.png)
+
+Позволяет наделять пользователей правом продавца а также вносить пользователя в список забанных пользователей.
+
+### Корзина
+
+![2023-04-06_15-32-58](https://user-images.githubusercontent.com/70832710/230879535-fb9b59d2-8fdc-4ffb-8eac-06368a349cb9.png)
+
+Демонстрирует список товаров в корзине, а также даёт возможность выбрать товары для заказа.
+
+### Панель заказа
+
+![2023-04-06_15-33-17](https://user-images.githubusercontent.com/70832710/230879658-97dfc9e3-2109-4058-afda-2d36ea10565e.png)
+
+Демонстрирует информацию о заказе и предоставляет возможность его осуществления.
+
+
+
